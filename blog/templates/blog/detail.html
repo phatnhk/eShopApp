@@ -1,0 +1,20 @@
+{% extends 'home/base.html' %}
+
+{% block content %}
+<hr>
+  
+<!-- Menu Section -->
+<div class="w3-row w3-padding-64" id="menu">
+  <div class="w3-col l6 w3-padding-large">
+    <h1 class="w3-center">{{title}}</h1><br>
+    {{content|safe}}    
+  </div>
+  
+  <div class="w3-col l6 w3-padding-large">
+    <img src="/w3images/tablesetting.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
+  </div>
+</div>
+
+<a href="{% url "blog:list" %}">Back to List</a>
+{% endblock %}
+    
