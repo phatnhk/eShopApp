@@ -11,3 +11,4 @@ cmd: python -m django startproject mystore .
 cmd: python manage.py runserver 8080
 trong đó: 8080 là port do mình đặt (mặc định 8000)\
 3. Tạo app đầu tiên trong Python Django
+cmd: python manage.py startapp home
